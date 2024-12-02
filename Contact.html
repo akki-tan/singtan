@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Singtan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="style3.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><a href="./index.html">Hotel Singtan</a></h1>
+    </header>
+    <nav>
+        <a href="./index.htm">Home</a>
+        <a href="./Bundle.html">Bundle</a>
+        <a href="./Contact.html">Contact</a>
+        <a href="./Gallery.html">Gallery</a>
+    </nav>
+
+    <div class="booking-container">
+        <h2 class="text-center mb-4">Pemesanan Kamar</h2>
+        <form id="bookingForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama Pemesan</label>
+                <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="mb-3">
+                <label for="package" class="form-label">Pilih Paket</label>
+                <select class="form-select" id="package" required>
+                    <option value="" disabled selected>Pilih salah satu</option>
+                    <option value="individual">Paket Individu</option>
+                    <option value="couple">Paket Pasangan</option>
+                    <option value="family">Paket Keluarga</option>
+                </select>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="checkIn" class="form-label">Check-In</label>
+                    <input type="date" class="form-control" id="checkIn" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="checkOut" class="form-label">Check-Out</label>
+                    <input type="date" class="form-control" id="checkOut" required>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-pastel w-100">Pesan</button>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Kamar Anda telah dipesan, Kami menunggu kedatangan anda! ^^");
+        });
+    </script>
+
+<div class="contact-info text-center mt-4">
+    <h3>Hubungi Kami</h3>
+    <p>Nomor Telepon: <strong>+6282179889326</strong></p>
+    <p>Sosial Media:</p>
+    <a href="https://www.facebook.com/adisuryadi.adisuryadi.5437?mibextid=ZbWKwL" target="_blank" class="btn btn-outline-primary m-1">Facebook</a>
+    <a href="https://www.instagram.com/adi.sry.id/profilecard/?igsh=eXQ3bm03eGlmNmVs target="_blank" class="btn btn-outline-danger m-1">Instagram</a>
+    <a href="https://wa.me/6282179889326" target="_blank" class="btn btn-outline-info m-1">Whatsapp</a>
+</div>
+
+<div class="thank-you-box">
+    <h3>Terima Kasih!</h3>
+    <p>Terima kasih sudah memesan kamar di Hotel Singtan. Kami sangat senang menyambut kedatangan Anda. Jika ada pertanyaan, jangan ragu untuk menghubungi kami melalui telepon atau media sosial yang telah tercantum.</p>
+</div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/adisuryadi.adisuryadi.5437?mibextid=ZbWKwL">Facebook</a> |
+            <a href="https://www.instagram.com/adi.sry.id/profilecard/?igsh=eXQ3bm03eGlmNmVs">Instagram</a> |
+            <a href="https://wa.me/6282179889326">Whatsapp</a>
+        </div>
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
